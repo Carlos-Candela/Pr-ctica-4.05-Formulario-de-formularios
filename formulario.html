@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script src="creador.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Generador de Formularios</h1>
+
+    <!-- Selección del tipo de elemento a añadir -->
+    <form id="formularioConfiguracion">
+        <label for="tipoInput">Seleccione el tipo de elemento:</label>
+        <select id="tipoInput">
+            <option value="text">Input (Texto)</option>
+            <option value="password">Input (Contraseña)</option>
+            <option value="textarea">Textarea</option>
+            <option value="label">Label</option>
+            <option value="image">Imagen</option>
+            <option value="checkbox">Checkbox</option>
+            <option value="radio">Radio</option>
+            <option value="button">Botón (Submit)</option>
+        </select>
+
+        <!-- Campo de entrada para el ID -->
+        <label for="elementId">Introduce el ID del elemento:</label>
+        <input type="text" id="elementId" required>
+
+        <!-- Botón para añadir el elemento -->
+        <button type="button" id="agregarElemento">Agregar elemento</button>
+    </form>
+
+    <!-- Div para mostrar mensajes -->
+    <div id="mensajeError"></div>
+    <div id="mensajeExito"></div>
+
+    <h2>Formulario Generado:</h2>
+    <form id="formularioDinamico"></form>
+</body>
+</html>

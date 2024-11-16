@@ -1,0 +1,112 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #555;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"], 
+select, 
+textarea, 
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, 
+select:focus, 
+textarea:focus {
+    border-color: #5b9bd5;
+    outline: none;
+    box-shadow: 0 0 5px rgba(91, 155, 213, 0.3);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #5b9bd5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a8ac3;
+}
+
+button:active {
+    background-color: #3e78ad;
+}
+
+#mensajeError, 
+#mensajeExito {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#mensajeError {
+    background-color: #ffe6e6;
+    color: #d9534f;
+    border: 1px solid #f5c6cb;
+}
+
+#mensajeExito {
+    background-color: #e6f7e6;
+    color: #5cb85c;
+    border: 1px solid #c3e6cb;
+}
+
+#formularioDinamico {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#formularioDinamico label {
+    font-size: 14px;
+    color: #555;
+}
+
+#formularioDinamico input,
+#formularioDinamico textarea,
+#formularioDinamico button {
+    margin-bottom: 10px;
+}
